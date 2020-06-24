@@ -25,39 +25,22 @@
 -->
 <pre class='metadata'>
 Title: W3C Patent Policy
-date: 2017-08-01
+date: 2020-06-23
 Status: w3c/ED
-URL: https://www.w3.org/Consortium/Patent-Policy-20170801/
+URL: https://www.w3.org/Consortium/Patent-Policy-TBD
 TR: https://www.w3.org/Consortium/Patent-Policy/
-Previous Version: https://www.w3.org/Consortium/Patent-Policy-20040205/
-Editor: Daniel J. Weitzner, W3C/MIT, djweitzner@w3.org
+Previous Version: https://www.w3.org/Consortium/Patent-Policy-20170801/
+Editor: Wendy Seltzer, W3C/MIT, wseltzer@w3.org
+Former Editor: Daniel J. Weitzner, W3C/MIT, djweitzner@w3.org
 Level: none
 Local Boilerplate: header yes, footer yes, status yes, logo yes, copyright yes, abstract yes
 Shortname: w3-patent-policy
 Remove Multiple Links: true
 Abstract:
-	The W3C Patent Policy governs the handling of patents in the process of producing Web standards. The goal of this policy is to assure that Recommendations produced under this policy can be implemented on a Royalty-Free (RF) basis.
+	The W3C Patent Policy governs the handling of patents in the process of producing Web standards. The goal of this policy is to assure that Specifications produced under this policy can be implemented on a Royalty-Free (RF) basis.
 Status Text:
 	<p>
-	This is the 5 February 2004 version of the W3C Patent Policy,
-	updated 1 August, 2017.
-	This version incorporates <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/errata">editorial updates</a>
-	to be consistent with the 2017 Process.
-	These updates were approved by the W3C Membership in July 2017.
-	No substantive changes are made.
-
-	<p>
-	This document has been reviewed by W3C Members
-	and other interested parties
-	and has been endorsed by the W3C Director as the W3C Patent Policy.
-	It is a stable document
-	and may be used as reference material
-	or cited as a normative reference from another document.
-	W3C's role in making this policy
-	is to provide a stable policy for handling patent claims
-	in the context of W3C Recommendations
-	and to enhance the functionality and interoperability of the Web.
-	This policy was produced by the <a href="https://www.w3.org/2001/ppwg/">W3C Patent Policy Working Group</a>.
+	This is a DRAFT for review and discussion purposes.
 </pre>
 <pre class=biblio>
 {
@@ -104,14 +87,26 @@ urlPrefix: https://www.w3.org/Consortium/Process/; type: dfn; spec: PROCESS
 		text: Invited Expert
 	url: #AC;
 		text: Advisory Committee
-		text: Advisory Committee Representative
-		text: AC Rep
 	url: #maturity-levels;
 		text: maturity level
 	url: #Member-only;
 		text: Member-only
 	url: #ACReview;
 		text: Advisory Committee review
+</pre>
+<pre class=anchors>
+urlPrefix:https://w3c.github.io/w3process/; type: dfn; spec: PROCESS
+	url: #technical-report;
+		text: W3C technical report
+		text: technical report
+	url: #rec-track;
+		text: Recommendation Track
+	url: #patent-review-drafts;
+		text: Patent Review Draft
+		text: PRD
+	url: #advisory-committee-representative;
+		text: Advisory Committee Representative
+		text: AC Rep
 </pre>
 
 <h2 id="sec-Overview">
@@ -121,7 +116,7 @@ Overview</h2>
 
 	<ol>
 		<li>
-			licensing goals for [=W3C Recommendations=]
+			licensing goals for W3C [=Specifications=]
 
 		<li>
 			licensing obligations
@@ -137,7 +132,7 @@ Overview</h2>
 
 		<li>
 			an <a href="#sec-Exception">exception handling process</a>
-			for situations in which the Royalty-Free status of a specification
+			for situations in which the Royalty-Free status of a [=Specification=]
 			comes under question
 
 		<li>
@@ -149,10 +144,10 @@ Overview</h2>
 	are normative.
 
 <h2 id="sec-Licensing">
-Licensing Goals for W3C Recommendations</h2>
+Licensing Goals for W3C Specifications</h2>
 
 	In order to promote the widest adoption of Web standards,
-	W3C seeks to issue [=Recommendations=]
+	W3C seeks to develop [=Specifications=]
 	that can be implemented on a <a href="#def-RF">Royalty-Free</a> (RF) basis.
 	Subject to the conditions of this policy,
 	W3C will not approve a [=Recommendation=]
@@ -161,10 +156,17 @@ Licensing Goals for W3C Recommendations</h2>
 
 	To this end,
 	[=Working Group charters=] will include a reference to this policy
-	and a requirement that specifications produced by the [=Working Group=]
+	and a requirement that [=Specifications=] produced by the [=Working Group=]
 	will be implementable on an RF basis,
 	to the best ability of the [=Working Group=] and the Consortium.
 
+	For the purpose of this policy,
+	“<dfn>Specification</dfn>” refers to
+	a [=W3C technical report=] published on the [=Recommendation Track=],
+	see [[PROCESS]].
+	“<dfn>Patent Review Draft</dfn> refers to a version of a W3C [=Specification=]
+	defined <a spec=PROCESS lt="Patent Review Draft">as such</a> by the W3C Process [[PROCESS]],
+	that is published for patent review and exclusion.
 
 <h2 id="sec-Obligations">
 Licensing Obligations of Working Group Participants</h2>
@@ -182,9 +184,10 @@ W3C RF Licensing Requirements for All Working Group Participants</h3>
 	W3C Team members,
 	invited experts,
 	and members of the public)
-	shall agree to make available under [=W3C RF licensing requirements=]
-	any [=Essential Claims=]
-	related to the work of that particular [=Working Group=].
+	shall agree to make Specification [=Licensing Commitments=] under [=W3C RF licensing requirements=]
+	for any [=Essential Claims=]
+	related to the work of that particular [=Working Group=]
+	that are not excluded pursuant to [[#sec-Exclusion|section 4]].
 	This requirement includes [=Essential Claims=] that the [=participant=] owns
 	and any that the [=participant=] has the right to license
 	without obligation of payment
@@ -217,7 +220,7 @@ Licensing Commitments in W3C Submissions</h3>
 	each entity (Submitters and other licensors) will offer a license
 	according to the [=W3C RF licensing requirements=]
 	for any portion of the [=Member Submission=]
-	that is subsequently incorporated in a [=W3C Recommendation=].
+	that is subsequently incorporated in a [=Patent Review Draft=] or [=Recommendation=].
 	The W3C Team may acknowledge the [=Member Submission=]
 	if the answer to the licensing commitment is either affirmative or negative,
 	and shall not acknowledge the [=Member Submission=] if no response is provided.
@@ -231,6 +234,59 @@ Note on Licensing Commitments for Invited Experts</h3>
 	An [=invited expert=] is only obliged to license those claims
 	over which s/he exercises control.
 
+<h3 id="#spec-licensing-commitments">
+Specification Licensing Commitments</h3>
+
+	[=Working Group=] [=participants=] who forego the right
+	to exclude [=Essential Claims=] against a [=Specification=]
+	when provided the opportunity to do so see [[#sec-Exclusion|section 4]],
+	commit to license those [=Essential Claims=] under the [=W3C Royalty-Free Licensing Requirements=].
+	This [=Specification=] <dfn>Licensing Commitment</dfn> is effective at the later of:
+
+	<ol type=i>
+		<li>
+			The first publication of the [=Specification=]
+			(after [=participant=] joins the [=Working Group=])
+			as either a [=Patent Review Draft=] or [=Recommendation=]
+			in which the claim is [=essential claim|essential=];
+
+		<li>
+			The end of the [=participant=]’s first [=Exclusion Opportunity=] pertaining to that claim.
+	</ol>
+
+<h3 id="commitment-persistence">
+Licensing Commitment Persistence</h3>
+
+	If a [=Working Group=] [=participant=] makes [=Licensing Commitments=]
+	on a [=Specification=] for an [=Essential Claim=],
+	the [=Licensing Commitment=] carries forward
+	to a subsequent [=Patent Review Draft=] or [=Recommendation=] of the [=Specification=]
+	if:
+
+	<ol type=i>
+		<li>
+			the subsequent [=Patent Review Draft=] or [=Recommendation=] uses the [=Essential Claim=]
+			in a substantially similar manner
+			and to a substantially similar extent
+			with a substantially similar result
+			as the [=Essential Claim=] was used
+			in the [=Specification=] on which the [=Working Group=] [=participant=] made the [=Licensing Commitment=];
+			and
+
+		<li>
+			the subsequent [=Patent Review Draft=] or [=Recommendation=] is within,
+			or only a minor expansion of,
+			the scope of the [=Working Group charter|Working Group's charter=]
+			as it existed at the time of the [=participant=]’s [=Licensing Commitment=] to the [=Specification=].
+	</ol>
+
+	In addition,
+	even if the above requirements are not met,
+	if an implementation of a subsequent [=Patent Review Draft=]
+	is also an implementation of a prior [=Patent Review Draft=],
+	then implementation of the subsequent [=Patent Review Draft=] or [=Recommendation=]
+	will also benefit from the license commitments made by [=participants=]
+	in the [=Working Group=] that developed the prior [=Patent Review Draft=] or [=Recommendation=].
 
 <h2 id="sec-Exclusion">
 Exclusion From W3C RF Licensing Requirements</h2>
@@ -246,52 +302,57 @@ Exclusion With Continued Participation</h3>
 	Specific [=Essential Claims=] may be excluded
 	from the <a href="#sec-W3C-RF-license">W3C RF licensing requirements</a>
 	by a [=participant=] who seeks to remain in the Working Group
-	only if that [=participant=] indicates its refusal to license specific claims
-	no later than 150 days after the publication
-	of the [=First Public Working Draft=]
-	[[PROCESS#first-wd|[PROCESS, section 6.3.1]]]
-	by specifically <a href="#sec-Disclosure">disclosing</a>
-	[=Essential Claims=] that will not be licensed on W3C RF terms.
-	A participant who excludes [=Essential Claims=]
-	may continue to participate in the [=Working Group=].
+	but only if that [=participant=] indicates its refusal to license specific [=Essential Claims=]
+	by specifically disclosing them
+	as required in [[#sec-exclude-mech]]
+	during an <dfn>Exclusion Opportunity</dfn>.
+	The [=Exclusion Opportunity=] and its duration,
+	as described herein,
+	are announced with a [=Call for Exclusions=].
 
-	If any claims are made [=essential claims|essential=]
-	by the final [=Recommendation=]
-	[[PROCESS#maturity-levels|[PROCESS, section 6.1.2]]]
+	A [=participant=] may exclude
+	from the [=W3C RF licensing requirements=]
+	any of their [=Essential Claims=] in a [=First Public Working Draft=] [[PROCESS]],
+	or if there is any update to the [=Specification=] published within 90 days thereafter,
+	in that latest [=Specification=],
+	within a 150-day [=Exclusion Opportunity=]
+	that begins upon publication of the [=First Public Working Draft=].
+
+	Additionally, if any claims are made [=essential claims|essential=]
+	by a [=Patent Review Draft=]
 	as a result of subject matter not present or apparent
-	in the latest public [=Working Draft=]
-	[[PROCESS#maturity-levels|[PROCESS, section 6.1.2]]]
-	published within 90 days after the First Public Working Draft,
+	at a previous [=Exclusion Opportunity=],
 	the [=participant=] may exclude these new [=Essential Claims=],
 	and only these claims,
-	by using this exclusion procedure within 60 days
-	after the publication of the [=Last Call Working Draft=]
-	[[PROCESS#candidate-rec|[PROCESS, section 6.4, now replaced by "Candidate Recommendation"]]].
-	After that point,
-	no claims may be excluded.
-	(Note that if material new subject matter is added after [=Last Call=],
-	then a new [=Last Call=] draft will have to be produced,
-	thereby allowing another exclusion period for 60 days
-	after that most recent [=Last Call=] draft.)
+	by excluding them within a 60-day [=Exclusion Opportunity=]
+	that begins upon the publication of the [=Patent Review Draft=]
+
+	A participant who excludes [=Essential Claims=]
+	may continue to participate in the [=Working Group=].
 
 <h3 id="sec-exclusion-resign">
 Exclusion and Resignation From the Working Group</h3>
 
 	A [=participant=] may resign from the [=Working Group=]
-	within 90 days after the publication of the [=First Public Working Draft=]
-	and be excused from all licensing commitments
-	arising out of [=Working Group=] participation.
+	within 90 days after the publication of the [=First Public Working Draft=] of a [=Specification=]
+	and be excused from all Specification [=Licensing Commitments=]
+	arising out of [=Working Group=] participation
+	with respect to that [=Specification=].
 
 	If a [=participant=] leaves the [=Working Group=]
-	later than 90 days after the publication of the [=First Public Working Draft=],
-	that [=participant=] is only bound to license [=Essential Claims=]
+	later than 90 days after the publication of a [=First Public Working Draft=],
+	that [=participant=] is bound to license [=Essential Claims=]
+	pertaining to that [=Specification=]
 	based on subject matter contained in the latest [=Working Draft=]
-	published before the [=participant=] resigned from the [=Working Group=].
+	or [=Patent Review Draft=]
+	published before the [=participant=] resigned from the [=Working Group=],
+	and in all previous [=Patent Review Drafts=] and [=Working Drafts=]
+	to which the [=participant=] was committed,
+	subject to any exclusion made by the [=participant=].
+
 	In addition,
-	departing [=participants=] have 60 days after their actual resignation
+	departing [=participants=] have a 60-day [=Exclusion Opportunity=] after their actual resignation
 	to exclude [=Essential Claims=]
-	made essential by documents not referenced in the [=Call for Exclusion=]
-	(see [[#sec-exclude-mech|section 4.5]])
 	if:
 
 	<ol>
@@ -303,8 +364,8 @@ Exclusion and Resignation From the Working Group</h3>
 
 		<li>
 			such subject matter is not present or apparent
-			in the latest [=Working Draft=] published within 90 days
-			after the [=First Public Working Draft=].
+			in a publication of that [=Specification=]
+			on which the departing [=participant=] had an [=Exclusion Opportunity=].
 	</ol>
 
 	The [=participant=] follows the same procedures specified in this [[#sec-Exclusion|section 4]]
@@ -319,12 +380,21 @@ Exclusion and Resignation From the Working Group</h3>
 Joining an Already Established Working Group</h3>
 
 	[=Participants=] who join a [=Working Group=]
-	more than 90 days after the publication of the [=First Public Working Draft=]
+	more than 90 days after the publication of a [=First Public Working Draft=]
+	of a [=Specification=] that has not yet been published as a [=Patent Review Draft=] or [=Recommendation=]
 	must exclude [=Essential Claims=] covered in the latest [=Working Draft=]
 	published within 90 days
 	after the [=First Public Working Draft=]
 	at the later of 150 days after the publication of the [=First Public Working Draft=]
 	or upon joining the [=Working Group=].
+
+	[=Participants=] who join a [=Working Group=]
+	after publication of a [=Patent Review Draft=]
+	must exclude [=Essential Claims=] covered in the latest [=Patent Review Draft=]
+	at the later of 60 days after the publication of that [=Patent Review Draft=] or upon joining the [=Working Group=].
+	Their [=Licensing Commitment=] becomes effective
+	at publication of the first [=Patent Review Draft=] or [=Recommendation=]
+	after [=participant=] joins the [=Working Group=].
 
 <h3 id="sec-exclude-app">
 Exclusion Procedures for Pending, Unpublished Patent Applications</h3>
@@ -335,7 +405,7 @@ Exclusion Procedures for Pending, Unpublished Patent Applications</h3>
 	in [[#sec-exclusion-with|section 4.1]] through [[#sec-join|4.3]],
 	except that the final deadline
 	for exclusion of unpublished claims
-	is at [=Last Call=] plus 60 days for any material,
+	is at [=Patent Review Draft=] plus 60 days for any material,
 	regardless of whether or not it was contained
 	in the documents referenced in the [=Call for Exclusion=] document.
 	Nevertheless,
@@ -353,7 +423,7 @@ Exclusion Procedures for Pending, Unpublished Patent Applications</h3>
 			or
 
 		<li>
-			identification of the specific part(s) of the specification
+			identification of the subsection(s) of the [=Specification=]
 			whose implementation makes the excluded claim [=essential claim|essential=].
 	</ol>
 
@@ -366,7 +436,7 @@ Exclusion Procedures for Pending, Unpublished Patent Applications</h3>
 Exclusion Mechanics</h3>
 
 	A <dfn export>Call for Exclusion</dfn> will be issued
-	by the [=Working Group=] Team Contact
+	by the W3C
 	indicating the relevant documents
 	against which [=participants=] must make exclusion statements
 	as well as precise dates and deadlines for making any exclusions.
@@ -376,13 +446,26 @@ Exclusion Mechanics</h3>
 	to the [=Working Group=] mailing list
 	and the [=Advisory Committee=] Representatives
 	of all organizations participating in the [=Working Group=].
-	In the event that a [=Working Group=] issues more than one Recommendation-track document,
+	In the event that a [=Working Group=] issues more than one [=Specification=]
 	the exclusion procedure will be employed for each series of documents individually.
+
+	Any exclusion of an [=Essential Claim=] must disclose:
+
+	<ol>
+		<li>
+			the patent number
+			or the publication number assigned to the patent application for a published application;
+			and
+
+		<li>
+			identification of the subsection(s) of the [=Specification=]
+			whose implementation makes the excluded claim [=essential claim|essential=].
+	</ol>
 
 <h2 id="sec-Requirements">
 W3C Royalty-Free (RF) Licensing Requirements</h2>
 
-	With respect to a [=Recommendation=] developed under this policy,
+	With respect to a [=Patent Review Draft=] or [=Recommendation=] developed under this policy,
 	a <dfn id="def-RF" lt="W3C Royalty-Free license | W3C RF Licensing Requirements | W3C Royalty-Free Licensing Requirements" local-lt="RF License" >W3C Royalty-Free license</dfn> shall mean
 	a non-assignable,
 	non-sublicensable license to make,
@@ -394,7 +477,7 @@ W3C Royalty-Free (RF) Licensing Requirements</h2>
 	import,
 	and distribute
 	and dispose of
-	implementations of the [=Recommendation=] that:
+	implementations of the [=Patent Review Draft=] or [=Recommendation=] that:
 
 	<blockquote>
 		<p>1. shall be available to all,
@@ -404,8 +487,8 @@ W3C Royalty-Free (RF) Licensing Requirements</h2>
 		<p>2. shall extend to all [=Essential Claims=]
 		owned or controlled by the licensor;
 
-		<p>3. may be limited to implementations of the [=Recommendation=],
-		and to what is required by the [=Recommendation=];
+		<p>3. may be limited to implementations of the [=Patent Review Draft=] or [=Recommendation=],
+		and to what is required by the [=Patent Review Draft=] or [=Recommendation=];
 
 		<p>4. may be conditioned on a grant of a reciprocal [=RF license=]
 		(as defined in this policy)
@@ -420,7 +503,7 @@ W3C Royalty-Free (RF) Licensing Requirements</h2>
 
 		<p>6. may be suspended with respect to any licensee
 		when licensor is sued by licensee
-		for infringement of claims [=essential claims|essential=] to implement any [=W3C Recommendation=];
+		for infringement of claims [=essential claims|essential=] to implement any [=Patent Review Draft=] or [=W3C Recommendation=];
 
 		<p>7. may not impose any further conditions or restrictions
 		on the use of any technology,
@@ -440,14 +523,13 @@ W3C Royalty-Free (RF) Licensing Requirements</h2>
 
 		<p>9. The [=RF license=] conforming to the requirements in this policy
 		shall be made available by the licensor
-		as long as the [=Recommendation=] is in effect.
-		The term of such license shall be for the life of the patents in question,
 		subject to the limitations of 5(10).
+		The term of such license shall be for the life of the patents in question,
 
-		<p>10. If the [=Recommendation=] is [=rescinded=]
+		<p>10. If the [=Patent Review Draft=] or [=Recommendation=] is [=rescinded=]
 		[[PROCESS#rec-rescind|[PROCESS, section 6.9]]] by W3C,
 		then no new licenses need be granted
-		but any licenses granted before the [=Recommendation=] was [=rescinded=]
+		but any licenses granted before the [=Patent Review Draft=] or [=Recommendation=] was [=rescinded=]
 		shall remain in effect.
 	</blockquote>
 
@@ -475,7 +557,7 @@ Disclosure Requirements</h3>
 		<li>
 			that individual has actual knowledge of a patent
 			which the individual believes contains [=Essential Claim=](s)
-			with respect to the specification
+			with respect to the [=Specification=]
 			for which disclosure is [=disclosure request|requested=].
 	</ol>
 
@@ -504,13 +586,7 @@ Disclosure Exemption</h3>
 Disclosure Requests</a></h3>
 
 	<dfn>Disclosure requests</dfn> will be included
-	in the "Status of This Document" section of each [=Recommendation=] track document
-	as it reaches each new [=maturity level=]
-	([=Working Draft=],
-	[=Last Call Working Draft=],
-	[=Candidate Recommendation=],
-	[=Proposed Recommendation=],
-	[=Recommendation=]).
+	in each [=Specification=].
 	Separate requests may be issued by the W3C
 	to any party suspected of having knowledge of [=Essential Claims=].
 	Such [=disclosure requests=] will instruct the recipient
@@ -518,7 +594,7 @@ Disclosure Requests</a></h3>
 	(in the case of Members)
 	or a W3C contact
 	(in the case of non-Members).
-	[=Disclosure requests=] other than those that appear in the specification itself
+	[=Disclosure requests=] other than those that appear in the [=Specification=] itself
 	should be directed to the AC Rep.
 
 	[=Disclosure requests=] will provide administrative details
@@ -535,7 +611,7 @@ Disclosure Contents</h3>
 			but need not mention specific claims
 
 		<li>
-			the [=Working Group=] and/or [=Recommendation=] to which it applies
+			the [=Working Group=] and/or [=Specification=] to which it applies
 	</ol>
 
 <h3 id="sec-published">
@@ -555,7 +631,7 @@ Disclosure of Laid-Open or Published Applications</h3>
 			or
 
 		<li>
-			identify those portions of the W3C specification
+			identify those portions of the [=Specification=]
 			likely to be covered by such claims.
 	</ol>
 
@@ -574,7 +650,7 @@ Good Faith Disclosure Standards</h3>
 	does not require that the discloser perform a patent search
 	or any analysis of the relationship
 	between the patents that the Member organization holds
-	and the specification in question.
+	and the [=Specification=] in question.
 
 	[=Disclosure=] of third party patents is only required
 	where the [=Advisory Committee Representative=]
@@ -610,7 +686,7 @@ Disclosure Obligations of Invited Experts</h3>
 Disclosures to Be Publicly Available on Recommendation Track</h3>
 
 	Patent [=disclosure=] information
-	for each specification on the [=Recommendation=] track
+	for each [=Specification=]
 	will be made public
 	along with each public [=Working Draft=] issued by the [=Working Group=].
 
@@ -661,7 +737,7 @@ PAG Composition</h3>
 			[=Working Group=] Chair, <em>ex officio</em>
 
 		<li>
-			Domain Leader responsible for the [=Working Group=]
+			W3C Manager responsible for the [=Working Group=]
 
 		<li>
 			Others suggested by the [=Working Group=] Chair
@@ -699,8 +775,8 @@ PAG Formation Timing</h4>
 	convening a [=PAG=] before a specific patent [=disclosure=] is made may be useful.
 	In other cases,
 	it may be that the [=PAG=] can better resolve the licensing problems
-	when the specification is at the [=Last Call=]
-	or [=Candidate Recommendation=] [=maturity level=].
+	when the [=Specification=] is at the
+	[=Candidate Recommendation=] [=maturity level=].
 
 <h4 id="sec-PAG-procedures-charter">
 PAG Charter Requirements</h4>
@@ -762,10 +838,10 @@ Possible PAG Conclusions</h4>
 			or the terms under which [=W3C RF licensing requirements=] may be met.
 
 		<li>
-			The [=Working Group=] should be terminated.
+			The [=Working Group=], or its work on the [=Specification=](s) at issue, should be terminated.
 
 		<li>
-			The [=Recommendation=]
+			The [=Specification=]
 			(if it has already been issued)
 			should be [=rescinded=].
 
@@ -790,7 +866,7 @@ Procedure for Considering Alternate Licensing Terms</h4>
 	the PAG, by [=consensus=]
 	[[PROCESS#Consensus|PROCESS, section 3.3]]],
 	may propose that specifically identified patented technology
-	be included in the [=Recommendation=]
+	be included in the [=Specification=]
 	even though such claims are not available
 	according to the [=W3C RF licensing requirements=] of this policy
 	("<dfn export>PAG Proposal</dfn>").
@@ -851,13 +927,19 @@ Essential Claims</h3>
 	[=Essential Claims=] shall mean
 	all claims in any patent or patent application
 	in any jurisdiction in the world
-	that would necessarily be infringed by implementation of the [=Recommendation=].
+	that would necessarily be infringed by implementation of a [=Patent Review Draft=] or [=Recommendation=].
 	A claim is necessarily infringed hereunder
 	only when it is not possible to avoid infringing it
 	because there is no non-infringing alternative
-	for implementing the [=normative=] portions of the [=Recommendation=].
+	for implementing the [=normative=] portions of the [=Specification=].
 	Existence of a non-infringing alternative shall be judged
-	based on the state of the art at the time the specification becomes a [=Recommendation=].
+	based on the state of the art at the time
+	the first [=Patent Review Draft=] containing the relevant normative text was published.
+
+	Where this text refers to [=Essential Claims=]
+	with respect to a [=Specification=] that is neither a [=Patent Review Draft=] nor a [=Recommendation=],
+	it refers to claims that would be [=Essential Claims=]
+	if that [=Specification=] were a [=Patent Review Draft=] or [=Recommendation=].
 
 <h3 id="def-essential-exclusions">
 Limitations on the Scope of Definition of Essential Claims</h3>
@@ -870,7 +952,6 @@ Limitations on the Scope of Definition of Essential Claims</h3>
 		<li>
 			any claims other than as set forth above
 			even if contained in the same patent as [=Essential Claims=];
-			and
 
 		<li>
 			claims which would be infringed only by:
@@ -878,26 +959,26 @@ Limitations on the Scope of Definition of Essential Claims</h3>
 			<ul>
 				<li>
 					portions of an implementation that are not specified
-					in the [=normative=] portions of the [=Recommendation=],
+					in the [=normative=] portions of the [=Patent Review Draft=] or [=Recommendation=],
 					or
 
 				<li>
 					enabling technologies
 					that may be necessary to make or use any product
 					or portion thereof
-					that complies with the [=Recommendation=]
-					and are not themselves expressly set forth in the [=Recommendation=]
+					that complies with the [=Patent Review Draft=] or [=Recommendation=]
+					and are not themselves expressly set forth in the [=Patent Review Draft=] or [=Recommendation=]
 					(e.g., semiconductor manufacturing technology,
 					compiler technology,
 					object-oriented technology,
 					basic operating system technology,
-					and the like);
+					and the like),
 					or
 
 				<li>
 					the implementation of technology developed elsewhere
 					and merely incorporated by reference
-					in the body of the [=Recommendation=].
+					in the body of the [=Patent Review Draft=] or [=Recommendation=];
 			</ul>
 
 		<li>
@@ -908,7 +989,7 @@ Limitations on the Scope of Definition of Essential Claims</h3>
 Definition of Normative, Optional and Informative</h3>
 
 	For purposes of this definition,
-	the <dfn id=dfn-norm>normative</dfn> portions of the [=Recommendation=]
+	the <dfn id=dfn-norm>normative</dfn> portions of the [=Specification=]
 	shall be deemed to include
 	only architectural and interoperability requirements.
 	Optional features in the RFC 2119 [[!RFC2119]] sense
@@ -916,7 +997,7 @@ Definition of Normative, Optional and Informative</h3>
 	unless they are specifically identified as informative.
 	Implementation examples
 	or any other material
-	that merely illustrate the requirements of the [=Recommendation=]
+	that merely illustrate the requirements of the [=Specification=]
 	are informative, rather than [=normative=].
 
 <div data-fill-with="references"></div>
@@ -924,78 +1005,31 @@ Definition of Normative, Optional and Informative</h3>
 <h2 id="sec-acknowledgments" class=no-num>
 Acknowledgments</h2>
 
-	W3C's evolving patent policy has been informed by help,
-	comments,
-	criticism,
-	and occasional rants by W3C Members,
-	many voices from the independent developer and Open Source/Free Software communities,
-	W3C Advisory Committee Representatives,
-	the W3C Team, the W3C Advisory Board,
-	and participants in the Patent Policy Working Group.
-	Those who have participated in the beta testing of this policy,
-	leading up to the <a href="https://www.w3.org/TR/patent-practice">W3C Current Patent Practice</a> document,
-	have also made an invaluable contributions to shaping this document
-	in a manner that will help in achieving W3C's mission.
-
-	Every participant in the Patent Policy Working Group has made substantial contributions to this document.
-	Since its inception,
-	the following individuals have participated in the Working Group:
-
-	Jean-Fran&ccedil;ois Abramatic (W3C),
-	Chuck Adams (IBM),
-	Angela Anderson (Nortel),
-	Anders Arvidsson (Nokia),
-	Martin Ashton (Reuters, Ltd.),
-	Carl Cargill (Sun Microsystems),
-	Wanda Cox (Apple Computer),
-	W. Mike Deese (Microsoft),
-	Mark DeLuca (Cozen O'Connor for Microsoft),
-	Don Deutsch (Oracle),
-	Tom Frost (AT&amp;T),
-	Michael Gelblum (Oracle),
-	Mari Georges (ILOG S.A.),
-	Lisa Goldman (Sun Microsystems),
-	Eduardo Gutentag (Sun Microsystems),
-	Toon Groenendaal (Philips Electronics),
-	Michele Herman (Microsoft),
-	Richard J. Holleman (IBM),
-	Ian Jacobs (W3C),
-	Glen Johnson (Nortel Networks),
-	Jerry Kellenbenz (Apple Computer),
-	George Kerscher (Daisy Consortium),
-	Alan Kotok (W3C),
-	Gerry Lane (IBM),
-	Arnaud Le Hors (IBM),
-	Susan Lesch (W3C, Team Contact),
-	Roger Martin (AOL),
-	Bede McCall (MITRE),
-	Catherine McCarthy (Sun Microsystems),
-	Lloyd McIntyre (Xerox),
-	Earl Nied (Intel),
-	Steve Nunn (The Open Group),
-	Scott K. Peterson (Hewlett-Packard),
-	Tony E. Piotrowski (Philips Electronics),
-	Gene Potkay (Avaya),
-	Chuck Powers (Motorola),
-	Barry Rein (Pennie &amp; Edmonds for W3C),
-	Gib Ritenour (Nortel Networks),
-	Michael Schallop (then Sun Microsystems),
-	Kevin Smith (Nortel Networks),
-	George Tacticos (IBM),
-	David Turner (Microsoft),
-	Daniel Weitzner (W3C, Working Group Chair),
-	George Willingmyre (GTW Associates),
-	Helene Plotka Workman (Apple Computer),
-	Don Wright (Lexmark),
-	Joe Young (Xerox),
-	and Tom Zell (Xerox).
-	Invited experts
-	Eben Moglen (Free Software Foundation),
-	Bruce Perens (Software in the Public Interest),
-	and Larry Rosen (Rosenlaw.com for Open Source Initiative)
-	participated and contributed fully.
-
-	Finally,
-	Susan Lesch was an invaluable staff contact
-	and has done a masterful job on several occasions
-	to help this inherently complex document read more easily and clearly.
+	W3C thanks those who have contributed to the 2020 update of the Patent Policy,
+	including
+	L. David Baron,
+	Marc Sandy Block,
+	Valentina Boyet,
+	Michael Champion,
+	Donald Deutsch,
+	Sarah Dukmen,
+	Elika J. Etemad,
+	Michael Gelblum,
+	Jeff Jaffe,
+	Philippe Le Hégaret,
+	Travis Leithead,
+	Daniel Nazer,
+	Ishna Neamatullah,
+	Charles Nevile,
+	Florian Rivoal,
+	David Rudin,
+	Wendy Seltzer,
+	Michael Sirtori,
+	Anna Weinberg,
+	Rigo Wenning,
+	Rob Yost,
+	Jennifer Zanocco.
+	We also thank those who gave input via the Patents and Standards Interest Group,
+	Advisory Board,
+	and Advisory Committee,
+	and the <a href="https://www.w3.org/Consortium/Patent-Policy-20170801/#sec-acknowledgments">contributors to the previous version</a>.

@@ -12,7 +12,8 @@
 	<p data-fill-with="logo"></p>
 	<h1 id="title" class="p-name no-ref">[TITLE]</h1>
 	<h2 id="subtitle" class="no-num no-toc no-ref">
-		<time class="dt-updated" datetime="2004-02-05">5 February 2004</time> (updated 1 August 2017)
+		[LONGSTATUS],
+		<time class="dt-updated" datetime="[ISODATE]">[DATE]</time>
 	</h2>
 	<div data-fill-with="spec-metadata"></div>
 	<div data-fill-with="warning"></div>
