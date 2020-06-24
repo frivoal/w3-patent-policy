@@ -34,6 +34,7 @@ Editor: Daniel J. Weitzner, W3C/MIT, djweitzner@w3.org
 Level: none
 Local Boilerplate: header yes, footer yes, status yes, logo yes, copyright yes, abstract yes
 Shortname: w3-patent-policy
+Remove Multiple Links: true
 Abstract:
 	The W3C Patent Policy governs the handling of patents in the process of producing Web standards. The goal of this policy is to assure that Recommendations produced under this policy can be implemented on a Royalty-Free (RF) basis.
 Status Text:
@@ -84,10 +85,33 @@ urlPrefix: https://www.w3.org/Consortium/Process/; type: dfn; spec: PROCESS
 	url: #last-call;
 		text: Last Call Working Draft
 		text: Last Call
+	url: #RecsCR;
+		text: Candidate Recommendation
+	url: #RecsPR;
+		text: Proposed Recommendation
 	url: #rec-rescind;
 		text: rescinded
 	url: #def-Consensus;
 		text: consensus
+	url: #GroupsWG;
+		text: W3C Working Group
+		text: Working Group
+	url: #WGCharter;
+		text: Working Group charter
+	url: #cfp;
+		text: Call for Participation
+	url: #invited-expert-wg;
+		text: Invited Expert
+	url: #AC;
+		text: Advisory Committee
+		text: Advisory Committee Representative
+		text: AC Rep
+	url: #maturity-levels;
+		text: maturity level
+	url: #Member-only;
+		text: Member-only
+	url: #ACReview;
+		text: Advisory Committee review
 </pre>
 
 <h2 id="sec-Overview">
@@ -97,27 +121,27 @@ Overview</h2>
 
 	<ol>
 		<li>
-			licensing goals for W3C Recommendations
+			licensing goals for [=W3C Recommendations=]
 
 		<li>
 			licensing obligations
-			that Working Group participants will undertake
-			as a condition of Working Group participation,
+			that [=Working Group=] [=participants=] will undertake
+			as a condition of [=Working Group=] participation,
 			along with means of excluding specific patents from those obligations
 
 		<li>
-			the definition of a W3C Royalty-Free license
+			the definition of a [=W3C Royalty-Free license=]
 
 		<li>
-			disclosure rules for W3C Members
+			[=disclosure=] rules for W3C Members
 
 		<li>
-			an exception handling process
+			an <a href="#sec-Exception">exception handling process</a>
 			for situations in which the Royalty-Free status of a specification
 			comes under question
 
 		<li>
-			definition of Essential Claims
+			definition of [=Essential Claims=]
 	</ol>
 
 	All numbered sections of this document (1-8),
@@ -128,55 +152,55 @@ Overview</h2>
 Licensing Goals for W3C Recommendations</h2>
 
 	In order to promote the widest adoption of Web standards,
-	W3C seeks to issue Recommendations
+	W3C seeks to issue [=Recommendations=]
 	that can be implemented on a <a href="#def-RF">Royalty-Free</a> (RF) basis.
 	Subject to the conditions of this policy,
-	W3C will not approve a Recommendation
-	if it is aware that <a href="#def-essential">Essential Claims</a> exist
+	W3C will not approve a [=Recommendation=]
+	if it is aware that [=Essential Claims=] exist
 	which are not available on Royalty-Free terms.
 
 	To this end,
-	Working Group charters will include a reference to this policy
-	and a requirement that specifications produced by the Working Group
+	[=Working Group charters=] will include a reference to this policy
+	and a requirement that specifications produced by the [=Working Group=]
 	will be implementable on an RF basis,
-	to the best ability of the Working Group and the Consortium.
+	to the best ability of the [=Working Group=] and the Consortium.
 
 
 <h2 id="sec-Obligations">
 Licensing Obligations of Working Group Participants</h2>
 
-	The following obligations shall apply to all participants in W3C Working Groups.
-	These obligations will be referenced from each Working Group charter
-	and Calls for Participation.
+	The following obligations shall apply to all [=participants=] in [=W3C Working Groups=].
+	These obligations will be referenced from each [=Working Group charter=]
+	and [=Call for Participation|Calls for Participation=].
 
 <h3 id="sec-W3C-RF-license">
 W3C RF Licensing Requirements for All Working Group Participants</h3>
 
-	As a condition of participating in a Working Group,
-	each participant
+	As a condition of participating in a [=Working Group=],
+	each <dfn>participant</dfn>
 	(W3C Members,
 	W3C Team members,
 	invited experts,
 	and members of the public)
-	shall agree to make available under <a href="#def-RF">W3C RF licensing requirements</a>
-	any <a href="#def-essential">Essential Claims</a>
-	related to the work of that particular Working Group.
-	This requirement includes Essential Claims that the participant owns
-	and any that the participant has the right to license
+	shall agree to make available under [=W3C RF licensing requirements=]
+	any [=Essential Claims=]
+	related to the work of that particular [=Working Group=].
+	This requirement includes [=Essential Claims=] that the [=participant=] owns
+	and any that the [=participant=] has the right to license
 	without obligation of payment
 	or other consideration to an unrelated third party.
-	With the exception of the provisions of section 4 below,
-	W3C RF licensing obligations made concerning the work of the particular Working Group
-	and described in this policy are binding on participants
+	With the exception of the provisions of [[#sec-Exclusion|section 4]] below,
+	W3C RF licensing obligations made concerning the work of the particular [=Working Group=]
+	and described in this policy are binding on [=participants=]
 	for the life of the patents in question
-	and encumber the patents containing <a href="#def-essential">Essential Claims</a>,
+	and encumber the patents containing [=Essential Claims=],
 	regardless of changes in participation status or W3C Membership.
 
 
 <h3 id="sec-non-participants">
 Limitation on Licensing Requirement for Non-Participating Members</h3>
 
-	Only the affirmative act of joining a Working Group,
+	Only the affirmative act of joining a [=Working Group=],
 	or otherwise agreeing to the licensing terms described here,
 	will obligate a Member to the W3C RF licensing commitments.
 	Mere Membership in W3C alone,
@@ -191,20 +215,20 @@ Licensing Commitments in W3C Submissions</h3>
 	and any others who provide patent licenses associated with the submitted document
 	must indicate whether or not
 	each entity (Submitters and other licensors) will offer a license
-	according to the <a href="#def-RF">W3C RF licensing requirements</a>
-	for any portion of the Member Submission
-	that is subsequently incorporated in a W3C Recommendation.
-	The W3C Team may acknowledge the Member Submission
+	according to the [=W3C RF licensing requirements=]
+	for any portion of the [=Member Submission=]
+	that is subsequently incorporated in a [=W3C Recommendation=].
+	The W3C Team may acknowledge the [=Member Submission=]
 	if the answer to the licensing commitment is either affirmative or negative,
-	and shall not acknowledge the Member Submission if no response is provided.
+	and shall not acknowledge the [=Member Submission=] if no response is provided.
 
 
 <h3 id="sec-invited">
 Note on Licensing Commitments for Invited Experts</h3>
 
-	Invited experts participate in Working Groups
+	[=Invited experts=] participate in [=Working Groups=]
 	in their individual capacity.
-	An invited expert is only obliged to license those claims
+	An [=invited expert=] is only obliged to license those claims
 	over which s/he exercises control.
 
 
@@ -212,115 +236,115 @@ Note on Licensing Commitments for Invited Experts</h3>
 Exclusion From W3C RF Licensing Requirements</h2>
 
 	Under the following conditions,
-	Working Group participants may exclude
-	specifically identified and disclosed Essential Claims
-	from the overall W3C RF licensing requirements:
+	[=Working Group=] [=participants=] may exclude
+	specifically identified and disclosed [=Essential Claims=]
+	from the overall [=W3C RF licensing requirements=]:
 
 <h3 id="sec-exclusion-with">
 Exclusion With Continued Participation</h3>
 
-	Specific Essential Claims may be excluded
+	Specific [=Essential Claims=] may be excluded
 	from the <a href="#sec-W3C-RF-license">W3C RF licensing requirements</a>
-	by a participant who seeks to remain in the Working Group
-	only if that participant indicates its refusal to license specific claims
+	by a [=participant=] who seeks to remain in the Working Group
+	only if that [=participant=] indicates its refusal to license specific claims
 	no later than 150 days after the publication
 	of the [=First Public Working Draft=]
 	[[PROCESS#first-wd|[PROCESS, section 6.3.1]]]
 	by specifically <a href="#sec-Disclosure">disclosing</a>
-	Essential Claims that will not be licensed on W3C RF terms.
-	A participant who excludes Essential Claims
-	may continue to participate in the Working Group.
+	[=Essential Claims=] that will not be licensed on W3C RF terms.
+	A participant who excludes [=Essential Claims=]
+	may continue to participate in the [=Working Group=].
 
-	If any claims are made essential
+	If any claims are made [=essential claims|essential=]
 	by the final [=Recommendation=]
 	[[PROCESS#maturity-levels|[PROCESS, section 6.1.2]]]
 	as a result of subject matter not present or apparent
 	in the latest public [=Working Draft=]
 	[[PROCESS#maturity-levels|[PROCESS, section 6.1.2]]]
 	published within 90 days after the First Public Working Draft,
-	the participant may exclude these new Essential Claims,
+	the [=participant=] may exclude these new [=Essential Claims=],
 	and only these claims,
 	by using this exclusion procedure within 60 days
 	after the publication of the [=Last Call Working Draft=]
 	[[PROCESS#candidate-rec|[PROCESS, section 6.4, now replaced by "Candidate Recommendation"]]].
 	After that point,
 	no claims may be excluded.
-	(Note that if material new subject matter is added after Last Call,
-	then a new Last Call draft will have to be produced,
+	(Note that if material new subject matter is added after [=Last Call=],
+	then a new [=Last Call=] draft will have to be produced,
 	thereby allowing another exclusion period for 60 days
-	after that most recent Last Call draft.)
+	after that most recent [=Last Call=] draft.)
 
 <h3 id="sec-exclusion-resign">
 Exclusion and Resignation From the Working Group</h3>
 
-	A participant may resign from the Working Group
-	within 90 days after the publication of the First Public Working Draft
+	A [=participant=] may resign from the [=Working Group=]
+	within 90 days after the publication of the [=First Public Working Draft=]
 	and be excused from all licensing commitments
-	arising out of Working Group participation.
+	arising out of [=Working Group=] participation.
 
-	If a participant leaves the Working Group
-	later than 90 days after the publication of the First Public Working Draft,
-	that participant is only bound to license Essential Claims
-	based on subject matter contained in the latest Working Draft
-	published before the participant resigned from the Working Group.
+	If a [=participant=] leaves the [=Working Group=]
+	later than 90 days after the publication of the [=First Public Working Draft=],
+	that [=participant=] is only bound to license [=Essential Claims=]
+	based on subject matter contained in the latest [=Working Draft=]
+	published before the [=participant=] resigned from the [=Working Group=].
 	In addition,
-	departing participants have 60 days after their actual resignation
-	to exclude Essential Claims
-	made essential by documents not referenced in the Call for Exclusion
-	(see section 4.5)
+	departing [=participants=] have 60 days after their actual resignation
+	to exclude [=Essential Claims=]
+	made essential by documents not referenced in the [=Call for Exclusion=]
+	(see [[#sec-exclude-mech|section 4.5]])
 	if:
 
 	<ol>
 		<li>
-			such claims are essential to subject matter
-			that is contained in the latest Working Draft
-			published before the participant resigns,
+			such claims are [=essential claims|essential=] to subject matter
+			that is contained in the latest [=Working Draft=]
+			published before the [=participant=] resigns,
 			and
 
 		<li>
 			such subject matter is not present or apparent
-			in the latest Working Draft published within 90 days
-			after the First Public Working Draft.
+			in the latest [=Working Draft=] published within 90 days
+			after the [=First Public Working Draft=].
 	</ol>
 
-	The participant follows the same procedures specified in this section 4
+	The [=participant=] follows the same procedures specified in this [[#sec-Exclusion|section 4]]
 	for excluding claims in issued patents,
 	published applications,
 	and unpublished applications.
-	Participants resigning from a Working Group
-	are still subject to all disclosure obligations
-	described in section 6.
+	[=Participants=] resigning from a [=Working Group=]
+	are still subject to all [=disclosure=] obligations
+	described in [[#sec-Disclosure|section 6]].
 
 <h3 id="sec-join">
 Joining an Already Established Working Group</h3>
 
-	Participants who join a Working Group
-	more than 90 days after the publication of the First Public Working Draft
-	must exclude Essential Claims covered in the latest Working Draft
+	[=Participants=] who join a [=Working Group=]
+	more than 90 days after the publication of the [=First Public Working Draft=]
+	must exclude [=Essential Claims=] covered in the latest [=Working Draft=]
 	published within 90 days
-	after the First Public Working Draft
-	at the later of 150 days after the publication of the First Public Working Draft
-	or upon joining the Working Group.
+	after the [=First Public Working Draft=]
+	at the later of 150 days after the publication of the [=First Public Working Draft=]
+	or upon joining the [=Working Group=].
 
 <h3 id="sec-exclude-app">
 Exclusion Procedures for Pending, Unpublished Patent Applications</h3>
 
-	Exclusion of Essential Claims in pending, unpublished applications
+	Exclusion of [=Essential Claims=] in pending, unpublished applications
 	follows the procedures for exclusion of issued claims
 	and claims in published applications
-	in section 4.1 through 4.3,
+	in [[#sec-exclusion-with|section 4.1]] through [[#sec-join|4.3]],
 	except that the final deadline
 	for exclusion of unpublished claims
-	is at Last Call plus 60 days for any material,
+	is at [=Last Call=] plus 60 days for any material,
 	regardless of whether or not it was contained
-	in the documents referenced in the Call for Exclusion document.
+	in the documents referenced in the [=Call for Exclusion=] document.
 	Nevertheless,
-	participants have a good faith obligation
+	[=participants=] have a good faith obligation
 	to make such exclusions as soon as is practical
-	after the publication of the first Working Draft
+	after the publication of the first [=Working Draft=]
 	that includes the relevant technology.
 
-	Any exclusion of an Essential Claim
+	Any exclusion of an [=Essential Claim=]
 	in an unpublished application must provide either:
 
 	<ol>
@@ -330,7 +354,7 @@ Exclusion Procedures for Pending, Unpublished Patent Applications</h3>
 
 		<li>
 			identification of the specific part(s) of the specification
-			whose implementation makes the excluded claim essential.
+			whose implementation makes the excluded claim [=essential claim|essential=].
 	</ol>
 
 	If option 2 is chosen,
@@ -341,25 +365,25 @@ Exclusion Procedures for Pending, Unpublished Patent Applications</h3>
 <h3 id="sec-exclude-mech">
 Exclusion Mechanics</h3>
 
-	A Call for Exclusion will be issued
-	by the Working Group Team Contact
+	A <dfn export>Call for Exclusion</dfn> will be issued
+	by the [=Working Group=] Team Contact
 	indicating the relevant documents
-	against which participants must make exclusion statements
+	against which [=participants=] must make exclusion statements
 	as well as precise dates and deadlines for making any exclusions.
 	In case there is any dispute about the dates for exclusion,
-	the dates indicated in the Call for Exclusion are controlling.
-	The Call for Exclusion will be sent
-	to the Working Group mailing list
-	and the Advisory Committee Representatives
-	of all organizations participating in the Working Group.
-	In the event that a Working Group issues more than one Recommendation-track document,
+	the dates indicated in the [=Call for Exclusion=] are controlling.
+	The [=Call for Exclusion=] will be sent
+	to the [=Working Group=] mailing list
+	and the [=Advisory Committee=] Representatives
+	of all organizations participating in the [=Working Group=].
+	In the event that a [=Working Group=] issues more than one Recommendation-track document,
 	the exclusion procedure will be employed for each series of documents individually.
 
 <h2 id="sec-Requirements">
 W3C Royalty-Free (RF) Licensing Requirements</h2>
 
-	With respect to a Recommendation developed under this policy,
-	a <dfn id="def-RF">W3C Royalty-Free license</dfn> shall mean
+	With respect to a [=Recommendation=] developed under this policy,
+	a <dfn id="def-RF" lt="W3C Royalty-Free license | W3C RF Licensing Requirements | W3C Royalty-Free Licensing Requirements" local-lt="RF License" >W3C Royalty-Free license</dfn> shall mean
 	a non-assignable,
 	non-sublicensable license to make,
 	have made,
@@ -370,22 +394,22 @@ W3C Royalty-Free (RF) Licensing Requirements</h2>
 	import,
 	and distribute
 	and dispose of
-	implementations of the Recommendation that:
+	implementations of the [=Recommendation=] that:
 
 	<blockquote>
 		<p>1. shall be available to all,
 		worldwide,
 		whether or not they are W3C Members;
 
-		<p>2. shall extend to all <a href="#def-essential">Essential Claims</a>
+		<p>2. shall extend to all [=Essential Claims=]
 		owned or controlled by the licensor;
 
-		<p>3. may be limited to implementations of the Recommendation,
-		and to what is required by the Recommendation;
+		<p>3. may be limited to implementations of the [=Recommendation=],
+		and to what is required by the [=Recommendation=];
 
-		<p>4. may be conditioned on a grant of a reciprocal RF license
+		<p>4. may be conditioned on a grant of a reciprocal [=RF license=]
 		(as defined in this policy)
-		to all <a href="#def-essential">Essential Claims</a>
+		to all [=Essential Claims=]
 		owned or controlled by the licensee.
 		A reciprocal license may be required to be available to all,
 		and a reciprocal license may itself be conditioned
@@ -396,7 +420,7 @@ W3C Royalty-Free (RF) Licensing Requirements</h2>
 
 		<p>6. may be suspended with respect to any licensee
 		when licensor is sued by licensee
-		for infringement of claims essential to implement any W3C Recommendation;
+		for infringement of claims [=essential claims|essential=] to implement any [=W3C Recommendation=];
 
 		<p>7. may not impose any further conditions or restrictions
 		on the use of any technology,
@@ -414,25 +438,25 @@ W3C Royalty-Free (RF) Licensing Requirements</h2>
 
 		<p>License term:
 
-		<p>9. The RF license conforming to the requirements in this policy
+		<p>9. The [=RF license=] conforming to the requirements in this policy
 		shall be made available by the licensor
-		as long as the Recommendation is in effect.
+		as long as the [=Recommendation=] is in effect.
 		The term of such license shall be for the life of the patents in question,
 		subject to the limitations of 5(10).
 
-		<p>10. If the Recommendation is [=rescinded=]
+		<p>10. If the [=Recommendation=] is [=rescinded=]
 		[[PROCESS#rec-rescind|[PROCESS, section 6.9]]] by W3C,
 		then no new licenses need be granted
-		but any licenses granted before the Recommendation was rescinded
+		but any licenses granted before the [=Recommendation=] was [=rescinded=]
 		shall remain in effect.
 	</blockquote>
 
-	All Working Group participants are encouraged
+	All [=Working Group=] [=participants=] are encouraged
 	to provide a contact
 	from which licensing information can be obtained
 	and other relevant licensing information.
 	Any such information will be made publicly available
-	along with the patent disclosures for the Working Group in question.
+	along with the patent [=disclosures=] for the [=Working Group=] in question.
 
 <h2 id="sec-Disclosure">
 Disclosure</h2>
@@ -440,70 +464,70 @@ Disclosure</h2>
 <h3 id="sec-disclosure-requirements">
 Disclosure Requirements</h3>
 
-	Disclosure is required when both of the following are true:
+<dfn>Disclosure</dfn> is <dfn lt="disclosure requirement">required</dfn> when both of the following are true:
 
 	<ol>
 		<li>
 			an individual in a Member organization
-			receives a disclosure request as described in section 6.3;
+			receives a [=disclosure request=] as described in [[#sec-disclosure-requests|section 6.3]];
 			and
 
 		<li>
 			that individual has actual knowledge of a patent
-			which the individual believes contains Essential Claim(s)
+			which the individual believes contains [=Essential Claim=](s)
 			with respect to the specification
-			for which disclosure is requested.
+			for which disclosure is [=disclosure request|requested=].
 	</ol>
 
 	Anyone in a Member organization
-	who receives a disclosure request
-	and who has such knowledge must inform that AC Rep.
-	Where disclosure is required,
-	the AC Rep will do so.
+	who receives a [=disclosure request=]
+	and who has such knowledge must inform that [=AC Rep=].
+	Where [=disclosure=] is required,
+	the [=AC Rep=] will do so.
 
 <h3 id="sec-disclosure-exemption">
 Disclosure Exemption</h3>
 
-	The disclosure obligation
+	The [=disclosure=] obligation
 	as to a particular claim
 	is satisfied if the holder of the claim
 	has made a commitment to license that claim
-	under <a href="#def-RF">W3C RF licensing requirements</a>
-	and the claim is no longer subject to exclusion under section 4.
-	An Essential Claim is no longer subject to exclusion
+	under [=W3C RF licensing requirements=]
+	and the claim is no longer subject to exclusion under [[#sec-Exclusion|section 4]].
+	An [=Essential Claim=] is no longer subject to exclusion
 	if a patent holder has affirmatively agreed
-	to license the Essential Claim
-	(effectively waiving its right to exclude such patent under section 4)
-	or if the relevant exclusion period under section 4 has lapsed.
+	to license the [=Essential Claim=]
+	(effectively waiving its right to exclude such patent under [[#sec-Exclusion|section 4]])
+	or if the relevant exclusion period under [[#sec-Exclusion|section 4]] has lapsed.
 
 <h3 id="sec-disclosure-requests">
 Disclosure Requests</a></h3>
 
-	Disclosure requests will be included
-	in the "Status of This Document" section of each Recommendation track document
-	as it reaches each new maturity level
-	(Working Draft,
-	Last Call Working Draft,
-	Candidate Recommendation,
-	Proposed Recommendation,
-	Recommendation).
+	<dfn>Disclosure requests</dfn> will be included
+	in the "Status of This Document" section of each [=Recommendation=] track document
+	as it reaches each new [=maturity level=]
+	([=Working Draft=],
+	[=Last Call Working Draft=],
+	[=Candidate Recommendation=],
+	[=Proposed Recommendation=],
+	[=Recommendation=]).
 	Separate requests may be issued by the W3C
-	to any party suspected of having knowledge of Essential Claims.
-	Such disclosure requests will instruct the recipient
-	to respond through their AC Rep
+	to any party suspected of having knowledge of [=Essential Claims=].
+	Such [=disclosure requests=] will instruct the recipient
+	to respond through their [=AC Rep=]
 	(in the case of Members)
 	or a W3C contact
 	(in the case of non-Members).
-	Disclosure requests other than those that appear in the specification itself
+	[=Disclosure requests=] other than those that appear in the specification itself
 	should be directed to the AC Rep.
 
-	Disclosure requests will provide administrative details
+	[=Disclosure requests=] will provide administrative details
 	for making disclosures.
 
 <h3 id="sec-disclosure-contents">
 Disclosure Contents</h3>
 
-	Disclosure statements must include:
+	[=Disclosure=] statements must include:
 
 	<ol>
 		<li>
@@ -511,18 +535,18 @@ Disclosure Contents</h3>
 			but need not mention specific claims
 
 		<li>
-			the Working Group and/or Recommendation to which it applies
+			the [=Working Group=] and/or [=Recommendation=] to which it applies
 	</ol>
 
 <h3 id="sec-published">
 Disclosure of Laid-Open or Published Applications</h3>
 
 	In the case of laid-open or published applications,
-	the Member's good faith disclosure obligation
+	the Member's good faith [=disclosure=] obligation
 	extends to unpublished amended and/or added claims
 	that have been allowed by relevant legal authorities
-	and that the Member believes to be Essential Claims.
-	To satisfy the disclosure obligation for such claims,
+	and that the Member believes to be [=Essential Claims=].
+	To satisfy the [=disclosure=] obligation for such claims,
 	the Member shall either:
 
 	<ol>
@@ -540,55 +564,55 @@ Disclosure of Pending, Unpublished Applications</h3>
 
 	If a W3C Member includes claims in a patent application
 	and such claims were developed
-	based on information from a W3C Working Group or W3C document,
+	based on information from a W3C [=Working Group=] or W3C document,
 	the Member must disclose the existence of such pending unpublished applications.
 
 <h3 id="sec-good-faith">
 Good Faith Disclosure Standards</h3>
 
-	Satisfaction of the disclosure requirement
+	Satisfaction of the [=disclosure requirement=]
 	does not require that the discloser perform a patent search
 	or any analysis of the relationship
 	between the patents that the Member organization holds
 	and the specification in question.
 
-	Disclosure of third party patents is only required
-	where the Advisory Committee Representative
-	or Working Group participant
+	[=Disclosure=] of third party patents is only required
+	where the [=Advisory Committee Representative=]
+	or [=Working Group=] [=participant=]
 	has been made aware that the third party patent holder or applicant
-	has asserted that its patent contains <a href="#def-essential">Essential Claims</a>,
-	unless such disclosure would breach a pre-existing non-disclosure obligation.
+	has asserted that its patent contains [=Essential Claims=],
+	unless such [=disclosure=] would breach a pre-existing non-disclosure obligation.
 
 <h3 id="sec-disclosure-timing">
 Timing of Disclosure Obligations</h3>
 
-	The disclosure obligation is an ongoing obligation
-	that begins with the Call for Participation.
-	Full satisfaction of the disclosure obligation
+	The [=disclosure=] obligation is an ongoing obligation
+	that begins with the [=Call for Participation=].
+	Full satisfaction of the [=disclosure=] obligation
 	may not be possible until later in the process
 	when the design is more complete.
 	In any case,
-	disclosure as soon as practically possible is required.
+	[=disclosure=] as soon as practically possible is required.
 
 <h3 id="sec-disclosure-termination">
 Termination of Disclosure Obligations</h3>
 
-	The disclosure obligation terminates
-	when the Recommendation is published or when the Working Group terminates.
+	The [=disclosure=] obligation terminates
+	when the [=Recommendation=] is published or when the [=Working Group=] terminates.
 
 <h3 id="sec-disclosure-invite">
 Disclosure Obligations of Invited Experts</h3>
 
-	Invited experts or members of the public participating in a Working Group
-	must comply with disclosure obligations to the extent of their own personal knowledge.
+	[=Invited experts=] or members of the public participating in a [=Working Group=]
+	must comply with [=disclosure=] obligations to the extent of their own personal knowledge.
 
 <h3 id="sec-disclosure-public">
 Disclosures to Be Publicly Available on Recommendation Track</h3>
 
-	Patent disclosure information
-	for each specification on the Recommendation track
+	Patent [=disclosure=] information
+	for each specification on the [=Recommendation=] track
 	will be made public
-	along with each public Working Draft issued by the Working Group.
+	along with each public [=Working Draft=] issued by the [=Working Group=].
 
 <h2 id="sec-Exception">
 Exception Handling</h2>
@@ -597,68 +621,68 @@ Exception Handling</h2>
 PAG Formation</h3>
 
 	In the event a patent has been disclosed that may be essential,
-	but is not available under <a href="#def-RF">W3C RF licensing requirements</a>,
-	a Patent Advisory Group (PAG) will be launched to resolve the conflict.
-	The PAG is an ad-hoc group
-	constituted specifically in relation to the Working Group with the conflict.
-	A PAG may also be formed without such a disclosure
-	if a PAG could help avoid anticipated patent problems.
-	During the time that the PAG is operating,
-	the Working Group may continue its technical work
-	within the bounds of its charter.
+	but is not available under [=W3C RF licensing requirements=],
+	a <dfn export lt="Patent Advisory Group | PAG">Patent Advisory Group (PAG)</dfn> will be launched to resolve the conflict.
+	The [=PAG=] is an ad-hoc group
+	constituted specifically in relation to the [=Working Group=] with the conflict.
+	A [=PAG=] may also be formed without such a disclosure
+	if a [=PAG=] could help avoid anticipated patent problems.
+	During the time that the [=PAG=] is operating,
+	the [=Working Group=] may continue its technical work
+	within the bounds of its [=Working Group charter|charter=].
 
 <h3 id="sec-PAG-post-Recommendation">
 PAG Formation After a Recommendation Is Issued</h3>
 
-	A PAG may also be convened
-	in the event Essential Claims are discovered after a Recommendation is issued.
-	In this case the PAG will be open to any interested Member,
-	though the PAG may choose to meet
-	without the holder of the Essential Claims in question.
+	A [=PAG=] may also be convened
+	in the event [=Essential Claims=] are discovered after a [=Recommendation=] is issued.
+	In this case the [=PAG=] will be open to any interested Member,
+	though the [=PAG=] may choose to meet
+	without the holder of the [=Essential Claims=] in question.
 
 <h3 id="sec-PAG-composition">
 PAG Composition</h3>
 
-	The PAG is composed of:
+	The [=PAG=] is composed of:
 
 	<ul>
 		<li>
-			Advisory Committee Representatives
-			of each W3C Member organization participating in the Working Group
-			(or alternate designated by the AC Rep)
+			[=Advisory Committee Representatives=]
+			of each W3C Member organization participating in the [=Working Group=]
+			(or alternate designated by the [=AC Rep=])
 
 		<li>
-			Working Group Team Contact
+			[=Working Group=] Team Contact
 
 		<li>
 			W3C counsel
 
 		<li>
-			Working Group Chair, <em>ex officio</em>
+			[=Working Group=] Chair, <em>ex officio</em>
 
 		<li>
-			Domain Leader responsible for the Working Group
+			Domain Leader responsible for the [=Working Group=]
 
 		<li>
-			Others suggested by the Working Group Chair
+			Others suggested by the [=Working Group=] Chair
 			and/or the Team
 			with the approval of the Director
 	</ul>
 
-	W3C Member participants in the PAG
+	W3C Member participants in the [=PAG=]
 	should be authorized to represent their organization's views
 	on patent licensing issues.
-	Any participant in the PAG may also be represented by legal counsel,
+	Any participant in the [=PAG=] may also be represented by legal counsel,
 	though this is not required.
-	Invited experts are not entitled to participate in the PAG,
-	though the PAG may chose to invite any qualified experts
-	who would be able to assist the PAG in its determinations.
+	[=Invited experts=] are not entitled to participate in the [=PAG=],
+	though the [=PAG=] may chose to invite any qualified experts
+	who would be able to assist the [=PAG=] in its determinations.
 
-	W3C expects to provide qualified legal staffing to all PAGs
+	W3C expects to provide qualified legal staffing to all [=PAGs=]
 	in the form of a Team member
-	who develops experience with the PAG process
+	who develops experience with the [=PAG=] process
 	and patent issues at W3C.
-	Legal staff to the PAG will represent
+	Legal staff to the [=PAG=] will represent
 	the interests of the Consortium as a whole.
 
 <h3 id="sec-PAG-procedures">
@@ -667,16 +691,16 @@ PAG Procedures</h3>
 <h4 id="sec-PAG-procedures-timing">
 PAG Formation Timing</h4>
 
-	The PAG will be convened by the Working Group Team Contact,
+	The [=PAG=] will be convened by the [=Working Group=] Team Contact,
 	based on a charter developed initially by the Team.
-	The timing for convening the PAG is at the discretion of the Director,
-	based on consultation with the Chair of the Working Group.
+	The timing for convening the [=PAG=] is at the discretion of the Director,
+	based on consultation with the Chair of the [=Working Group=].
 	In some cases,
-	convening a PAG before a specific patent disclosure is made may be useful.
+	convening a [=PAG=] before a specific patent [=disclosure=] is made may be useful.
 	In other cases,
-	it may be that the PAG can better resolve the licensing problems
-	when the specification is at the Last Call
-	or Candidate Recommendation maturity level.
+	it may be that the [=PAG=] can better resolve the licensing problems
+	when the specification is at the [=Last Call=]
+	or [=Candidate Recommendation=] [=maturity level=].
 
 <h4 id="sec-PAG-procedures-charter">
 PAG Charter Requirements</h4>
@@ -685,34 +709,34 @@ PAG Charter Requirements</h4>
 
 	<ul>
 		<li>
-			clear goals for the PAG,
-			especially a statement of the question(s) the PAG is to answer.
+			clear goals for the [=PAG=],
+			especially a statement of the question(s) the [=PAG=] is to answer.
 
 		<li>
 			duration.
 
 		<li>
 			confidentiality status,
-			which must follow the underlying Working Group
-			(Member only, public, etc.).
+			which must follow the underlying [=Working Group=]
+			([=Member-only|Member only=], public, etc.).
 	</ul>
 
-	The PAG charter must specify deadlines
+	The [=PAG=] charter must specify deadlines
 	for completion of individual work items it takes on.
-	The PAG,
+	The [=PAG=],
 	once convened,
 	may propose changes to its charter as appropriate,
-	to be accepted based on consensus of the PAG participants.
-	The Team will choose a member of the PAG to serve as Chair.
-	A single PAG may exist for the duration of the Working Group
+	to be accepted based on consensus of the [=PAG=] participants.
+	The Team will choose a member of the [=PAG=] to serve as Chair.
+	A single [=PAG=] may exist for the duration of the [=Working Group=]
 	with which it is associated if needed.
 
 	In order to obtain input from the interested public at large,
-	as soon as the PAG is convened,
-	the PAG charter will be made public,
-	along with all of the patent disclosure
+	as soon as the [=PAG=] is convened,
+	the [=PAG=] charter will be made public,
+	along with all of the patent [=disclosure=]
 	and licensing statements
-	applicable to the Working Group in question.
+	applicable to the [=Working Group=] in question.
 
 <h3 id="sec-PAG-conclude">
 PAG Conclusion</h3>
@@ -721,60 +745,60 @@ PAG Conclusion</h3>
 Possible PAG Conclusions</h4>
 
 	After appropriate consultation,
-	the PAG may conclude:
+	the [=PAG=] may conclude:
 
 	<ol>
 		<li>
 			The initial concern has been resolved,
-			enabling the Working Group to continue.
+			enabling the [=Working Group=] to continue.
 
 		<li>
-			The Working Group should be instructed to
+			The [=Working Group=] should be instructed to
 			consider designing around the identified claims.
 
 		<li>
 			The Team should seek further information and evaluation,
 			including and not limited to evaluation of the patents in question
-			or the terms under which W3C RF licensing requirements may be met.
+			or the terms under which [=W3C RF licensing requirements=] may be met.
 
 		<li>
-			The Working Group should be terminated.
+			The [=Working Group=] should be terminated.
 
 		<li>
-			The Recommendation
+			The [=Recommendation=]
 			(if it has already been issued)
-			should be rescinded.
+			should be [=rescinded=].
 
 		<li>
 			Alternative licensing terms should be considered.
-			The procedure in section 7.5.3 must be followed.
+			The procedure in [[#sec-PAG-conclude-alternate|section 7.5.3]] must be followed.
 	</ol>
 
 <h4 id="sec-PAG-conclude-outcome">
 PAG Outcome</h4>
 
-	Outcomes 4, 5 or 6 require an Advisory Committee review
+	Outcomes 4, 5 or 6 require an [=Advisory Committee review=]
 	and Director's decision.
 	In any case,
-	the PAG must state its proposal and reasons in a public W3C document.
+	the [=PAG=] must state its proposal and reasons in a public W3C document.
 
 <h4 id="sec-PAG-conclude-alternate">
 Procedure for Considering Alternate Licensing Terms</h4>
 
 	After having made every effort to resolve the conflict
-	through options 1, 2, and 3 under 7.5.1,
+	through options 1, 2, and 3 under [[#sec-PAG-conclude-possible|7.5.1]],
 	the PAG, by [=consensus=]
 	[[PROCESS#Consensus|PROCESS, section 3.3]]],
 	may propose that specifically identified patented technology
-	be included in the Recommendation
+	be included in the [=Recommendation=]
 	even though such claims are not available
-	according to the W3C RF licensing requirements of this policy
-	("PAG Proposal").
-	The PAG Proposal must explain:
+	according to the [=W3C RF licensing requirements=] of this policy
+	("<dfn export>PAG Proposal</dfn>").
+	The [=PAG Proposal=] must explain:
 
 	<ul>
 		<li>
-			why the chartered goals of the Working Group cannot be met
+			why the chartered goals of the [=Working Group=] cannot be met
 			without inclusion of the identified technology;
 
 		<li>
@@ -782,7 +806,7 @@ Procedure for Considering Alternate Licensing Terms</h4>
 			will be consistent with widespread adoption.
 	</ul>
 
-	The PAG Proposal must include:
+	The [=PAG Proposal=] must include:
 
 	<ul>
 		<li>
@@ -791,61 +815,61 @@ Procedure for Considering Alternate Licensing Terms</h4>
 			and,
 
 		<li>
-			a proposed charter for the Working Group,
-			unless the Recommendation has been issued
+			a proposed charter for the [=Working Group=],
+			unless the [=Recommendation=] has been issued
 			and no new work is required.
 	</ul>
 
 	If the Director determines
-	that the PAG Proposal is the best alternative consistent with the W3C mission,
+	that the [=PAG Proposal=] is the best alternative consistent with the W3C mission,
 	the interests of the Web community,
 	and is clearly justified
 	despite the expressed preference of the W3C Membership for RF licensing,
-	then the PAG Proposal shall be circulated for public comment
-	and Advisory Committee review.
-	The Director may also circulate the PAG Proposal
-	for Advisory Committee review without such endorsement.
-	Should the PAG Proposal be rejected,
-	then either sub-paragraph 4 or 5 of section 7.5.3 will apply as appropriate,
-	without further action of the Advisory Committee.
-	Members of the Working Group who are bound to RF terms
-	are not released from their obligations by virtue of the PAG Proposal alone.
-	As with any newly chartered Working Group,
+	then the [=PAG Proposal=] shall be circulated for public comment
+	and [=Advisory Committee review=].
+	The Director may also circulate the [=PAG Proposal=]
+	for [=Advisory Committee review=] without such endorsement.
+	Should the [=PAG Proposal=] be rejected,
+	then either sub-paragraph 4 or 5 of [[#sec-PAG-conclude-alternate|section 7.5.3]] will apply as appropriate,
+	without further action of the [=Advisory Committee=].
+	Members of the [=Working Group=] who are bound to RF terms
+	are not released from their obligations by virtue of the [=PAG Proposal=] alone.
+	As with any newly chartered [=Working Group=],
 	new commitments must be made,
 	along with possible exclusions.
 	In order to expedite the process,
-	the PAG Proposal should consider
+	the [=PAG Proposal=] should consider
 	whether additional claims would be excluded
-	under the new charter and include such information in the PAG Proposal.
+	under the new charter and include such information in the [=PAG Proposal=].
 
 <h2 id="def-essential">
-Definition of Essential Claims</h2>
+Definition of <dfn>Essential Claims</dfn></h2>
 
 <h3 id="def-essential-definition">
 Essential Claims</h3>
 
-	"Essential Claims" shall mean
+	[=Essential Claims=] shall mean
 	all claims in any patent or patent application
 	in any jurisdiction in the world
-	that would necessarily be infringed by implementation of the Recommendation.
+	that would necessarily be infringed by implementation of the [=Recommendation=].
 	A claim is necessarily infringed hereunder
 	only when it is not possible to avoid infringing it
 	because there is no non-infringing alternative
-	for implementing the normative portions of the Recommendation.
+	for implementing the [=normative=] portions of the [=Recommendation=].
 	Existence of a non-infringing alternative shall be judged
-	based on the state of the art at the time the specification becomes a Recommendation.
+	based on the state of the art at the time the specification becomes a [=Recommendation=].
 
 <h3 id="def-essential-exclusions">
 Limitations on the Scope of Definition of Essential Claims</h3>
 
 	The following are expressly excluded from
 	and shall not be deemed to constitute
-	Essential Claims:
+	[=Essential Claims=]:
 
 	<ol>
 		<li>
 			any claims other than as set forth above
-			even if contained in the same patent as Essential Claims;
+			even if contained in the same patent as [=Essential Claims=];
 			and
 
 		<li>
@@ -854,15 +878,15 @@ Limitations on the Scope of Definition of Essential Claims</h3>
 			<ul>
 				<li>
 					portions of an implementation that are not specified
-					in the normative portions of the Recommendation,
+					in the [=normative=] portions of the [=Recommendation=],
 					or
 
 				<li>
 					enabling technologies
 					that may be necessary to make or use any product
 					or portion thereof
-					that complies with the Recommendation
-					and are not themselves expressly set forth in the Recommendation
+					that complies with the [=Recommendation=]
+					and are not themselves expressly set forth in the [=Recommendation=]
 					(e.g., semiconductor manufacturing technology,
 					compiler technology,
 					object-oriented technology,
@@ -873,7 +897,7 @@ Limitations on the Scope of Definition of Essential Claims</h3>
 				<li>
 					the implementation of technology developed elsewhere
 					and merely incorporated by reference
-					in the body of the Recommendation.
+					in the body of the [=Recommendation=].
 			</ul>
 
 		<li>
@@ -884,16 +908,16 @@ Limitations on the Scope of Definition of Essential Claims</h3>
 Definition of Normative, Optional and Informative</h3>
 
 	For purposes of this definition,
-	the normative portions of the Recommendation
+	the <dfn id=dfn-norm>normative</dfn> portions of the [=Recommendation=]
 	shall be deemed to include
 	only architectural and interoperability requirements.
 	Optional features in the RFC 2119 [[!RFC2119]] sense
-	are considered normative
+	are considered [=normative=]
 	unless they are specifically identified as informative.
 	Implementation examples
 	or any other material
-	that merely illustrate the requirements of the Recommendation
-	are informative, rather than normative.
+	that merely illustrate the requirements of the [=Recommendation=]
+	are informative, rather than [=normative=].
 
 <div data-fill-with="references"></div>
 
@@ -909,8 +933,7 @@ Acknowledgments</h2>
 	the W3C Team, the W3C Advisory Board,
 	and participants in the Patent Policy Working Group.
 	Those who have participated in the beta testing of this policy,
-	leading up to the <a href="https://www.w3.org/TR/patent-practice">W3C Current Patent
-Practice</a> document,
+	leading up to the <a href="https://www.w3.org/TR/patent-practice">W3C Current Patent Practice</a> document,
 	have also made an invaluable contributions to shaping this document
 	in a manner that will help in achieving W3C's mission.
 
