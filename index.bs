@@ -25,9 +25,9 @@
 -->
 <pre class='metadata'>
 Title: W3C Patent Policy
-date: 2020-06-23
+date: 2020-09-15
 Status: w3c/ED
-URL: https://www.w3.org/Consortium/Patent-Policy-TBD
+URL: https://www.w3.org/Consortium/Patent-Policy-20200915/
 TR: https://www.w3.org/Consortium/Patent-Policy/
 Previous Version: https://www.w3.org/Consortium/Patent-Policy-20170801/
 Editor: Wendy Seltzer, W3C/MIT, wseltzer@w3.org
